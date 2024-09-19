@@ -1,0 +1,149 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MpControlCitas.master.cs" Inherits="VistaCitas.MpControlCitas" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/> 
+</head>
+
+
+<body>
+
+    <form id="form1" runat="server">
+        <div>
+           <header>
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="https://bulma.io">
+                        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"/>
+                    </a>
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        
+                        <span aria-hidden="true"> </span>
+                        <span aria-hidden="true"> </span>
+                        <span aria-hidden="true"> </span>
+                    </a>
+                </div>
+              
+                  <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                       
+                        <a class="navbar-item" >
+                             <asp:Button ID="BtnMenInicio" text="Inicio" runat="server" CssClass="button is-white" OnClick="BtnMenInicio_Click" />
+                        </a>
+                          
+                        <a class="navbar-item">
+                             <asp:Button ID="BrnMenPacientes" text="Pacientes" runat="server" CssClass="button is-white" OnClick="BrnMenPacientes_Click" />
+                        </a>
+                        <a class="navbar-item">
+                            <asp:Button ID="BtnMenMedicos" text="Medicos" runat="server" CssClass="button is-white" OnClick="BtnMenMedicos_Click"   />
+                        </a>
+                        <a class="navbar-item">
+                            <asp:Button ID="BrnMenEspecialidad" text="Especialidades" runat="server" CssClass="button is-white" OnClick="BrnMenEspecialidad_Click" />
+                        </a>
+                         <a class="navbar-item">
+                            <asp:Button ID="BtnMenCitas" text="Citas" runat="server" CssClass="button is-white" OnClick="BtnMenCitas_Click"  />
+                        </a>
+                                                 
+
+                        <div class="navbar-item has-dropdown is-hoverable">
+                                                 
+
+                            <a class="navbar-link"> Mantenimientos
+                                                               
+                            </a>
+
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item" >
+                                    <asp:Button ID="BtnMenUsuario" text="Usuarios" runat="server" CssClass="button is-white"  />
+                                 </a>
+                               
+                                <hr class="navbar-divider"/>
+                                <a class="navbar-item">Otro
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+               </div>
+
+
+                <div class="navbar-end has-text-centered navbar-brand">
+
+              
+                    <div class="navbar-end has-text-centered navbar-brand">
+
+
+                          <div runat="server" id="div1" class="navbar-item has-dropdown is-hoverable">
+                            <asp:Label CssClass="navbar-link" runat="server" ID="Label1"></asp:Label>
+                            <div class="navbar-dropdown">
+                                <asp:Button ID="Button1" text="Inicio" runat="server" CssClass="button is-white"  />
+                                
+                              
+                                
+                                
+                                
+
+
+                             </div>
+                        </div>
+
+
+                        <div runat="server" id="divuser" class="navbar-item has-dropdown is-hoverable">
+                            <asp:Label CssClass="navbar-link" runat="server" ID="lblusuario"></asp:Label>
+                            <div class="navbar-dropdown">
+                                <asp:Button ID="BtnSalir" text="Salir" runat="server" CssClass="button is-white" OnClick="BtnSalir_Click"  />
+                                <asp:Button ID="BtnSeguridad" text="Seguridad" runat="server" CssClass="button is-white" OnClick="BtnSeguridad_Click"  />
+                           
+                             </div>
+                        </div>
+
+
+                        <div class="navbar-item" runat="server" id="divbuttons">
+                            <div class="buttons">
+                               <asp:Button ID="BtnRegistrarse" text="Registrarse" runat="server" CssClass="button is-primary" OnClick="BtnRegistrarse_Click"    />
+                               <asp:Button ID="BtnLogin" text="Iniciar sesión" runat="server" CssClass="button is-light" OnClick="BtnLogin_Click"   />
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+            
+      
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+  
+
+
+
+    </form>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Sistema de Gestion citas - SGC </strong> by <a href="h">Julio Castillo</a>
+            </p>
+        </div>
+    </footer>
+</body>>
+
+
+
+
+
+</html>
