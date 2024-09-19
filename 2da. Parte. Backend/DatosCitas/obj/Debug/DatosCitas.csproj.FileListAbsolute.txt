@@ -1,0 +1,2 @@
+C:\Users\dell\Desktop\julio tarea\MVC SGC\ControlCitas\DatosCitas\obj\Debug\DatosCitas.csproj.AssemblyReference.cache
+C:\Users\dell\Desktop\julio tarea\MVC SGC\ControlCitas\DatosCitas\obj\Debug\DatosCitas.csproj.CoreCompileInputs.cache
